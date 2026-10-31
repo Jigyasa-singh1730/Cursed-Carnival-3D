@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursed Carnival 3D</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="hud">
+    <h1>CURSED CARNIVAL</h1>
+    <div class="stats">
+      <span>🗝 Keys: <b id="keys">0 / 3</b></span>
+      <span>❤️ Lives: <b id="lives">3</b></span>
+    </div>
+    <p id="message">Find 3 keys and escape the carnival!</p>
+  </div>
+
+  <div id="startScreen" class="screen">
+    <h1>CURSED CARNIVAL</h1>
+    <p>The carnival is not what it seems...</p>
+    <button id="startBtn">ENTER THE CARNIVAL</button>
+    <small>WASD / Arrow Keys to move</small>
+  </div>
+
+  <div id="endScreen" class="screen hidden">
+    <h1 id="endTitle">GAME OVER</h1>
+    <p id="endMessage"></p>
+    <button onclick="location.reload()">PLAY AGAIN</button>
+  </div>
+
+  <div id="mobileControls">
+    <button data-key="ArrowUp">▲</button>
+    <div>
+      <button data-key="ArrowLeft">◀</button>
+      <button data-key="ArrowDown">▼</button>
+      <button data-key="ArrowRight">▶</button>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
